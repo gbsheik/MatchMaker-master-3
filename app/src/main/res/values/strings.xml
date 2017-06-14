@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MatchMakerMaker</string>
+    <string name="str_questionAmount">How many questions?</string>
+    <integer-array name="sa_questionAmount">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+    </integer-array>
+
+    <string name="str_questionType">What type of question should this be?</string>
+    <string-array name="sa_questionType">
+        <item>Multiple Choice</item>
+        <item>Free Response</item>
+    </string-array>
+
+    <string name="str_pointValue">How many Points?</string>
+    <integer-array name="sa_pointValue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Multiple Choice"
+        android:textSize="22dp"
+        android:id="@+id/multChoice"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the Question Here: "
+        android:layout_below="@id/multChoice"
+        android:textSize="20dp"
+        android:id="@+id/questionPrompt"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/questionPrompt"
+        android:id="@+id/et_question"
+        android:ems="15"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_question"
+        android:text="  A:"
+        android:id="@+id/choice1"
+        android:textSize="22dp"
+        android:layout_marginBottom="12dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/choice1"
+        android:id="@+id/answer1"
+        android:layout_below="@id/et_question"
+        android:ems="10"
+        android:text=""
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/answer1"
+        android:id="@+id/spn_pts1"
+        android:layout_below="@id/et_question"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice1"
+        android:text="  B:"
+        android:id="@+id/choice2"
+        android:textSize="22dp"
+        android:layout_marginBottom="12dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/choice2"
+        android:id="@+id/answer2"
+        android:layout_below="@id/choice1"
+        android:ems="10"
+        android:text=""
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/answer2"
+        android:id="@+id/spn_pts2"
+        android:layout_below="@id/choice1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice2"
+        android:text="  C:"
+        android:id="@+id/choice3"
+        android:textSize="22dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/choice3"
+        android:id="@+id/answer3"
+        android:layout_below="@id/choice2"
+        android:ems="10"
+        android:text=""
+        android:layout_marginBottom="14dp"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/answer3"
+        android:id="@+id/spn_pts3"
+        android:layout_below="@id/choice2"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/answer3"
+        android:id="@id/btn_next"/>
+
+
+
+</RelativeLayout>

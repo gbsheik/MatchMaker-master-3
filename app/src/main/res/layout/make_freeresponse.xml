@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question ##"
+        android:id="@+id/questionNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the Question Here: "
+        android:layout_below="@id/questionNumber"
+        android:id="@+id/questionPrompt"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/questionPrompt"
+        android:id="@+id/et_question"
+        android:ems="15"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the desired Answer Here: "
+        android:layout_below="@id/et_question"
+        android:id="@+id/answerPrompt"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answerPrompt"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/et_answer"
+        android:ems="15"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_answer"
+        android:text="How many points is this worth?"
+        android:id="@+id/pointsPrompt"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pointsPrompt"
+        android:id="@+id/spn_questionPoints"
+        android:layout_marginBottom="12dp"></Spinner>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spn_questionPoints"
+        android:layout_centerHorizontal="true"
+        android:text="Next"
+        android:id="@+id/btn_next"/>
+
+</RelativeLayout>
